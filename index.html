@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#000000">
+<title>Код в матрице</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head><body>
+<canvas id="rain"></canvas>
+<div id="app">
+  <div id="hud"><span id="lvl">ВХОД</span><span id="code">__ __ __</span><button id="mute" aria-label="звук">♪</button></div>
+  <div id="stage"></div>
+  <div id="dlg" class="hidden"><div class="who"></div><div class="txt"></div><button>ДАЛЬШЕ ▶</button></div>
+  <div id="fx" class="hidden"></div>
+</div>
+<!-- three.js (WebGL). Если нет интернета — положи three.min.js (r128) в папку js/ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" onerror="var s=document.createElement('script');s.src='js/three.min.js';document.head.appendChild(s)"></script>
+<script src="js/audio.js"></script>
+<script src="js/core.js"></script>
+<script src="js/level1.js"></script>
+<script src="js/level2.js"></script>
+<script src="js/level3.js"></script>
+<script src="js/level4.js"></script>
+<script src="js/level5.js"></script>
+<script src="js/level6.js"></script>
+<script src="js/finale.js"></script>
+<script>G.start()</script>
+</body></html>
